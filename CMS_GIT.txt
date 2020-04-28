@@ -1,0 +1,15 @@
+COMANDOS DE GIT 
+
+git init //inicializa git
+git status //ver los archivos que subes
+git add . //selecciona todos los archivos que se van a subir
+git stash save "mensaje" //guarda los cambios en el stash
+git pull //baja los cambios del repositorio
+git stash pop //unir lo que se bajo con lo que esta en el stash 
+git commit -m "mensaje" //colocar un mensaje de lo que se realizo
+git remote add origin https://github.com/perfil/nombre del repo //dar de alta el repositorio
+git push -u origin master //subir raiz
+git config --global user.name "nombre" //se hace configuracion global del repo
+git config --global user.email "correo"
+git config --global -e
+git push //sube cambios
