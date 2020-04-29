@@ -9,6 +9,7 @@
 	
     <link rel="stylesheet" type="text/css" href="css/login.css">
     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<title>Login</title>
 </head>
@@ -22,27 +23,79 @@
             </section>
            
             <section id="right">
-                  <input id="login"  name="opcion" type="radio"> <label for="login">Login</label>
-                  <input id="new"  name="opcion" type="radio"> <label for="new">Nueva Cuenta</label>
-               <h1>BIENVENIDO</h1>
-               <h2>Ingrese su cuenta y contraseña</h2>
-                <form>
-                    <p>USUARIO</p>
-                    <input type="text" name="Usuario" placeholder="Usuario">
-                    <br>
-                    <p>CONTRASEÑA</p>
-                    <input type="password" name="Password" placeholder="Contraseña">
-                    <br>
-                    <input type="submit" name="Ingresar" value="Entrar">
-                </form>
+                  <input  id="login"  name="opcion" type="radio" checked> <label id="f-login" for="login">Ingresar</label>
+                  <input id="new"  name="opcion" type="radio"> <label id="f-new" for="new">Registrar</label>
+                  
+                <div id="opcion-login">
+                    <h1>BIENVENIDO</h1>
+                    <h2>Ingrese su cuenta y contraseña</h2>
+                    <form action="" method="post" >
+                        <p>USUARIO</p>
+                        <input type="text" name="Usuario" placeholder="Usuario">
+                        
+                        <p>CONTRASEÑA</p>
+                        <input type="password" name="Password" placeholder="Contraseña">
+                        
+                        <input type="submit" name="Ingresar" value="Entrar">
+                    </form>
+                </div>
+                <div id="opcion-new">
+                    <h1>Nuevo Usuario</h1>
+                    <h2>Ingrese los datos de la nueva cuenta</h2>
+                    <form action="" method="post" >
+                        <p>CUENTA DE USUARIO</p>
+                        <input type="text" name="Usuario_Nuevo" placeholder="Usuario">
+                        
+                        <p>CONTRASEÑA</p>
+                        <input type="password" name="Password_Nuevo" placeholder="Contraseña">
+                        
+                        <input type="submit" name="Guardar" value="Guardar">
+                    </form>
+                </div>
             </section>
+            
+            
             
         </div>
     </main>
     
-    <footer>
-        
-    </footer>
+    <script>
+        $(document).ready(function(){
+            
+            /*Clic en Ingresar*/
+            $("#login").change(function(){
+
+                $("#f-new").css({ "color": "#3a4955",
+                    "border": "1px solid #808d97",
+                    "background": "#808d97"});
+                
+                $("#f-login").css({ "color": "white",
+                    "border": "1px solid #70D6C1",
+                    "background": "#70D6C1"});
+                
+                
+                $("#opcion-login").toggle(1000);
+                $("#opcion-new").toggle(1000);
+ 
+            });
+            
+            //Clic en Registrar
+            $("#new").change(function(){
+                
+                 $("#f-login").css({ "color": "#3a4955",
+                    "border": "1px solid #808d97",
+                    "background": "#808d97"});
+                
+                $("#f-new").css({ "color": "white",
+                    "border": "1px solid #70D6C1",
+                    "background": "#70D6C1"});
+                
+                $("#opcion-login").toggle(1000);
+                $("#opcion-new").toggle(1000);
+            });
+            
+        });
+    </script>
     
 </body>
 </html>

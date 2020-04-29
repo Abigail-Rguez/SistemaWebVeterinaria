@@ -42,7 +42,7 @@ form{
 }
 
 #right{
-    padding: 140px 60px;
+    padding: 30px 60px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background: #3a4955;
@@ -71,11 +71,14 @@ input[type=submit]{
     border: 0px;
     border-radius: 30px;
     background: #70D6C1;
+    cursor:pointer;
 }
 
 h1{
     font-size: 30px;
-    color: white;   
+    color: white;  
+    margin-top: 100px;
+    width: auto;
 }
 
 h2{
@@ -83,4 +86,33 @@ h2{
     font-family: sans-serif;
     font-size: 20px;
     color: aliceblue;
+}
+
+#opcion-new,input[type=radio]{
+    display: none;
+}
+
+label{
+    cursor:pointer;
+    float: right;
+    font-size: 15px;
+    padding-left: 10px;
+    color: gray;
+    padding: 3px;
+}
+
+#f-new{
+    color: #3a4955;
+    border: 1px solid #808d97;
+    background: #808d97;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#f-login{
+    color: white;
+    border: 1px solid #70D6C1;
+    background: #70D6C1;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
