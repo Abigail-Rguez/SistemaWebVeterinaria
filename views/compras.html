@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Compras</title>
 
-    <!--- Bootstrap CSS --->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
     <!--- Custom CSS for this page --->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../icons/style.css">
@@ -26,7 +23,7 @@
         <div class="logo"><img src="../img/Logo-Extend.svg"></div>
         <ul class="menu select">
                 <li class="title">INICIO</li>
-                <li class="active"><a href="./index.html"><i class="icon-home icon"></i>Inicio</a></li>
+                <li class="active"><a href="../index.html"><i class="icon-home icon"></i>Inicio</a></li>
                 <li class="title">INFORMACIÓN</li>
                 <li><a href="#">Acerca de... <i class="icon-chevron-small-right icon-right icon"></i></a>
                     <ul>
@@ -57,8 +54,8 @@
                         </li>
                     </ul>
                 </li>
-                <li ><a href="views/compras.html">Compras</a></li>
-                <li ><a href="#">Ventas</a></li>
+                <li ><a href="../views/compras.html">Compras</a></li>
+                <li ><a href="../views/ventas.html">Ventas</a></li>
             </ul>
     </div>
     <div id="contenido" >
@@ -67,18 +64,22 @@
                 <h5>AGREGAR COMPRAS</h5>
                 <form class="row">
                     <div class="col-md-6">
-                        <label for="clave" class="info_label">Clave del Producto</label>
+                        <label for="clave" class="info_label">Clave de la Compra</label>
                         <input name="clave" id="claveproduc" placeholder="Ingresar..." type="text">
                     </div>
                     <div class="col-md-6">
-                        <label for="examplePassword11" class="info_label">Precio</label>
-                        <input name="precio" id="precioproduc" placeholder="Ingresar..." type="number">
+                        <label for="examplePassword11" class="info_label">Clave del Proveedor</label>
+                        <input name="provee" id="claveprovee" placeholder="Ingresar..." type="text">
                     </div>
                     <div class="col-12">
-                        <label for="exampleAddress" class="info_label">Nombre del Producto</label>
-                        <input name="name" id="nameproduc" placeholder="Ingresar..." type="text">
+                        <label for="exampleAddress" class="info_label">Fecha</label>
+                        <input name="date" id="fecha" placeholder="Ingresar..." type="text">
                     </div>
                     <div class="col-12">
+                        <label for="exampleAddress" class="info_label">Hora</label>
+                        <input name="Hrs" id="Hora" placeholder="Ingresar..." type="text">
+                    </div>
+                    <div class="col-18">
                     <button id="guardar" type="submit" class="guardar">Guardar</button>
                     <button id="cancelar" type="reset" class="cancelar">Cancelar</button>
                     </div>
@@ -93,18 +94,19 @@
                             <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                                 <thead>
                                     <tr>
-                                        <th class="text-center">Clave</th>
-                                        <th class="text-center">Precio</th>
-                                        <th class="text-center">Nombre del Producto</th>
-                                        <th class="text-center">Acciones</th>
+                                        <th class="text-center">Clave de la Compra</th>
+                                        <th class="text-center">Clave del Proveedor</th>
+                                        <th class="text-center">Fecha de Compra</th>
+                                        <th class="text-center">Hora de Compra</th>
+                                        <th class="text-center">Opciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    
                                     <tr>
                                         <td class="text-center">12345</td>
-                                        <td class="text-center">786</td>
-                                        <td class="text-center">Pro Plan</td>
+                                        <td class="text-center">54321</td>
+                                        <td class="text-center">30 de Abril</td>
+                                        <td class="text-center">2:00 p.m</td>
                                         <td class="text-center">
                                             <a href="./editarcompras.html" class="mr-2 btn-icon btn-icon-only btn btn-outline-success"><i class="icon-new-message icon-btn"> </i></a>
                                             <button id="eliminar"  class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="icon-trash icon-btn"> </i></button>
@@ -116,14 +118,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div>  
     </div>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="../scripts/menu.js"></script>
-    <!--- Bootstrap JS --->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    
 </body>
 </html>

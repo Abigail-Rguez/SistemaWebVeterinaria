@@ -5,14 +5,13 @@
     <link rel="icon" type="imagen/png" href="../img/Logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Editar Compras</title>
+    <title>Ventas</title>
 
     <!--- Custom CSS for this page --->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../icons/style.css">
-    <link rel="stylesheet" href="../css/compras.css">
+    <link rel="stylesheet" href="../css/ventas.css">
     <link rel="stylesheet" href="../css/form.css">
-    
 </head>
     
 <body>
@@ -21,7 +20,7 @@
  
     <div id="sidebar" class="sidebar">
         
-    <div class="logo"><img src="../img/Logo-Extend.svg"></div>
+        <div class="logo"><img src="../img/Logo-Extend.svg"></div>
         <ul class="menu select">
                 <li class="title">INICIO</li>
                 <li class="active"><a href="../index.html"><i class="icon-home icon"></i>Inicio</a></li>
@@ -62,15 +61,15 @@
     <div id="contenido" >
         <div class="container-fluid">
             <div class="card">
-                <h5>AGREGAR COMPRAS</h5>
+                <h5>AGREGAR VENTAS</h5>
                 <form class="row">
                     <div class="col-md-6">
-                        <label for="clave" class="info_label">Clave de la Compra</label>
-                        <input name="clave" id="claveproduc" placeholder="Ingresar..." type="text">
+                        <label for="clave" class="info_label">Clave de la Venta</label>
+                        <input name="clavev" id="claveventa" placeholder="Ingresar..." type="text">
                     </div>
                     <div class="col-md-6">
-                        <label for="examplePassword11" class="info_label">Clave del Proveedor</label>
-                        <input name="provee" id="claveprovee" placeholder="Ingresar..." type="text">
+                        <label for="examplePassword11" class="info_label">Clave del Cliente</label>
+                        <input name="client" id="claveclient" placeholder="Ingresar..." type="text">
                     </div>
                     <div class="col-12">
                         <label for="exampleAddress" class="info_label">Fecha</label>
@@ -86,9 +85,44 @@
                     </div>
                 </form>
             </div>
+
+            <div class="card">
+                <h5>VENTAS REGISTRADAS</h5>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Clave de la Compra</th>
+                                        <th class="text-center">Clave del Cliente</th>
+                                        <th class="text-center">Fecha de Venta</th>
+                                        <th class="text-center">Hora de Venta</th>
+                                        <th class="text-center">Opciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">12345</td>
+                                        <td class="text-center">54321</td>
+                                        <td class="text-center">30 de Abril</td>
+                                        <td class="text-center">2:00 p.m</td>
+                                        <td class="text-center">
+                                            <a href="./editarventas.html" class="mr-2 btn-icon btn-icon-only btn btn-outline-success"><i class="icon-new-message icon-btn"> </i></a>
+                                            <button id="eliminar"  class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="icon-trash icon-btn"> </i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
-    
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="../scripts/menu.js"></script>
+    
 </body>
 </html>
