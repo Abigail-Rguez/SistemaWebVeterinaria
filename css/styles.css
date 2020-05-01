@@ -103,7 +103,6 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
 }
 
 
-
 /*logo*/
 .logo img{
     max-width: 109px;
@@ -166,9 +165,6 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
     width: 34px;
     height: 34px;
     line-height: 34px;
-    /* position: absolute;
-    left: 5px;
-    top: 50%; */
     margin-top: -17px;
     font-size: 1.3rem;
     opacity: .3;
