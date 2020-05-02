@@ -1,8 +1,8 @@
 /*form*/
 .card{
-    width: 222%;
+    width: 120%;
     flex: 1 1 auto;
-    padding: 3.25rem;
+    padding: 2.25rem;
     box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03),0 0.9375rem 1.40625rem rgba(4,9,20,0.03),0 0.25rem 0.53125rem rgba(4,9,20,0.05),0 0.125rem 0.1875rem rgba(4,9,20,0.03);
     position: relative;
     display: flex;
@@ -15,6 +15,7 @@
     border-radius: .25rem;
     margin-bottom: 30px;
 }
+
 h5{
     margin: 0;
     text-transform: uppercase;
@@ -23,10 +24,11 @@ h5{
     font-size: .88rem;
     margin-bottom: .75rem;
 }
+
 input{
     display: block;
     width: 99%;
-    padding: .375rem 0;
+    padding: .325rem 0;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -39,12 +41,23 @@ input{
     margin-bottom: 1rem;
     padding-left: 12px;
 }
+
 .info_label{
     font-size: .88rem;
     margin-bottom: .5rem;
     display: inline-block;
 
 }
+
+.img {
+    width: 199px;
+    height: 303px;
+    padding: 1px; 
+    margin: 10px; 
+    border: 2px solid black; 
+    float: left; 
+}
+
 .guardar{
     margin-top: .5rem;
     width: 79px;
@@ -56,6 +69,7 @@ input{
     border-color: #70D6C1;
     font-size: .8rem;
 }
+
 .cancelar{
     margin-top: .5rem;
     width: 79px;

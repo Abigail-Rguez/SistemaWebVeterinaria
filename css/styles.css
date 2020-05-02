@@ -108,7 +108,6 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
     font-size:1rem;   
 }
 
-
 /*logo*/
 .logo img{
     max-width: 109px;
@@ -121,7 +120,6 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
     box-sizing: content-box;
 }
 /*endlogo*/
-
 
 /*menu*/
 .menu_button {
@@ -200,7 +198,6 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
 #logo_superior{
     width: 26%;
     margin-left: 37%;
-    
 }
 
 @media (min-width: 576px) {  
